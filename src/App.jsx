@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import { BrowserRouter } from 'react-router'
 
 
 
-function App() {
+
+export default function App() {
 
 
   return (
@@ -12,4 +14,3 @@ function App() {
   )
 }
 
-export default App
