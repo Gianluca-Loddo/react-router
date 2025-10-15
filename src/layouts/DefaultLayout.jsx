@@ -16,7 +16,7 @@ export default function DefaultLayout() {
                         Prodotti
                     </NavLink>
                     
-                    <NavLink className="nav-link" to="/">
+                    <NavLink className="nav-link" to="/about">
                         Chi Sono                            
                     </NavLink>
                 </div>
