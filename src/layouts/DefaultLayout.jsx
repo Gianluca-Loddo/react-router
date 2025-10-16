@@ -6,7 +6,7 @@ export default function DefaultLayout() {
             {/*Navbar Bootstrap con NavLink: evidenzia automaticamente il link attivo aggiungendo la classe "active"*/}
             <nav className="navbar navbar-expand bg-light border-bottom">
                 <div className="container">
-                    <spa className="navbar-brand">React-Router Store</spa>
+                    <spa className="navbar-brand">React-Router Store (by Gianluca)</spa>
                     <div className="navbar-nav gap-2">
                         <NavLink className="nav-link" to="/">
                             Home
