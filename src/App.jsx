@@ -15,10 +15,11 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         {/* Route Padre con DefaultLayout (navbar + outlet) */}
-        <Route path='/' Component={DefaultLayout}>
+        <Route path="/" Component={DefaultLayout}>
           <Route index Component={HomePage} />
-          <Route path='products' Component={Products} />
-          <Route path='about' Component={About} />
+          <Route path="products" Component={Products} />
+          <Route path="products/:id" Component={Products} /> {/* ROTTA DINAMICA - per il prodotto (dettagli) */}
+          <Route path="about" Component={About} />
         </Route>
       </Routes>
     </BrowserRouter>
