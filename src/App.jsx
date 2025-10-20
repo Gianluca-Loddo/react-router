@@ -17,8 +17,8 @@ export default function App() {
         {/* Route Padre con DefaultLayout (navbar + outlet) */}
         <Route path='/' Component={DefaultLayout}>
           <Route index Component={HomePage} />
-          <Route path='/products' Component={Products} />
-          <Route path='/about' Component={About} />
+          <Route path='products' Component={Products} />
+          <Route path='about' Component={About} />
         </Route>
       </Routes>
     </BrowserRouter>
