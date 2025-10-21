@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 // import stile card (grandezza massima immagini)
@@ -8,6 +8,10 @@ import './Products.css'
 export default function Products() {
     // recupero id prodotto da visualizzare (rotta dinamica)
     const { id } = useParams();
+
+    // navigazione programmatica (useNavigate)
+    const navigate = useNavigate();
+
 
     //stato: caricamento lista dei prodotti 
     const [products, setProducts] = useState([]);
@@ -81,9 +85,13 @@ export default function Products() {
                                 <span className="badge text-bg-primary">€ {product.price}</span>
 
                                 <div className="mt-3">
-                                    <Link to="/products" className="btn btn-outline-secondary btn-sm">
-                                        Back to products
-                                    </Link>
+                                    <button
+                                        type="button"
+                                        className="btn btn-outline-secondary btn-sm"
+                                        onClick={() => navigate(-1)}
+                                    >
+                                        Back
+                                    </button>
                                 </div>
                             </div>
                         </div>
